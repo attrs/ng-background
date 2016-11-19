@@ -1,0 +1,25 @@
+{
+  "name": "ng-background",
+  "version": "0.0.0",
+  "description": "angular directive - background",
+  "main": "ng-background.js",
+  "repository": "attrs/ng-background",
+  "author": "joje <joje.attrs@gmail.com>",
+  "homepage": "https://github.com/attrs/ng-background",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "angularjs",
+    "directive",
+    "directives",
+    "background"
+  ],
+  "files": [
+    "*.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "peerDependencies": {
+    "angular": "1.x"
+  }
+}
