@@ -8,7 +8,7 @@ $ npm install ng-background --save
 ## Usage
 ```javascript
 require('ng-background');
-angular.module('app', [ngBackground]);
+angular.module('app', ['ngBackground']);
 ```
 ```html
 <div ng-background="{{background}}"></div>
