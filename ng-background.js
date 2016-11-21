@@ -6,11 +6,13 @@ module.exports = angular.module('ngBackground', [])
       var change = function(img) {
         if( img ) {
           element.css({
-            'background-image': 'url(' + img +')'
+            'background-image': 'url(' + img +')',
+            'background-size': 'cover'
           });
         } else {
           element.css({
-            'background-image': ''
+            'background-image': '',
+            'background-size': ''
           });
         }
       };
