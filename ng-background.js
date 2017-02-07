@@ -7,8 +7,8 @@ module.exports = angular.module('ngBackground', [])
         if( img ) {
           element.css({
             'background-image': 'url(' + img +')',
-            'background-size': 'cover',
-            'background-position': 'center'
+            'background-size': attrs.ngBackgroundSize || 'cover',
+            'background-position': attrs.ngBackgroundPosition || 'center'
           });
         } else {
           element.css({
