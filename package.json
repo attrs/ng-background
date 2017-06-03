@@ -1,6 +1,6 @@
 {
   "name": "ng-background",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "angular directive - background",
   "main": "ng-background.js",
   "repository": "attrs/ng-background",
