@@ -11,7 +11,7 @@ function isInView(element) {
 function scan() {
   [].forEach.call(document.querySelectorAll('[ng-background][lazyload]'), function(el) {
     var img = 'url(' + el.getAttribute('ng-background') + ')';
-    if( isInView(el) && el.style.backgroundImage != img ) el.style.backgroundImage = img;
+    if( isInView(el) && !el.style.backgroundImage ) el.style.backgroundImage = img;
   });
 }
 
