@@ -21,5 +21,6 @@
   ],
   "peerDependencies": {
     "angular": "1.x"
-  }
+  },
+  "dependencies": {}
 }
