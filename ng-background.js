@@ -1,6 +1,7 @@
 var $ = angular.element;
 
 function isInView(element) {
+  if( !document.body ) return false;
   var viewportHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
   var rect = element.getBoundingClientRect();
   if( !rect.width || rect.height <= 2 ) return false;
@@ -53,20 +54,4 @@ module.exports = angular.module('ngBackground', [])
 module.exports.scan = scan;
 
 var observer;
-$(window).on('load scroll resize', scan)
-.on('load', function() {
-  if( window.MutationObserver ) {
-    if( observer ) observer.disconnect();
-    observer = new MutationObserver(function(mutations) {
-      scan();
-    });
-    
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true,
-      attributes: true
-    });
-  } else {
-    window.setInterval(scan, 1000);
-  }
-});
+$(window).on('load scroll resize', scan);
