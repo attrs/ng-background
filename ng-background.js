@@ -53,5 +53,4 @@ module.exports = angular.module('ngBackground', [])
 
 module.exports.scan = scan;
 
-var observer;
 $(window).on('load scroll resize', scan);
